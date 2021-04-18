@@ -7,6 +7,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(threadName)s: %(message)s')
 def saludo(a,b):
 	time.sleep(1)
 	logging.info(f'Proceso ejecutado variables a: {a}, b: {b} \n')
+	
 def hola():
 	logging.info('Hola mundo')
 

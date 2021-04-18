@@ -18,13 +18,14 @@ def guardar(id_persona, data):
 tiempo_ini = datetime.datetime.now()
 
 #declaracion de hilo de forma clasica
-#name: declara el nombre d enuestro hilo; target:metodo o funcion que ejecutara; arg: argumentis del metoso si lo socilita en una tupla
+#name: declara el nombre d enuestro hilo; target:metodo o funcion que ejecutara; arg: argumentos del metoso si lo socilita en una tupla
 t1 = threading.Thread(name="hilo_1", target = consulta, args=(1, ))
 t2 =  threading.Thread(name="hilo_2",target = guardar, args=(1, "hola mundo"))
 
+#inicializa el hilo
 t1.start()
 t2.start()
-
+#Metodo join() Esto bloquea el hilo llamador(padre) hasta que el hilo cuyo método join() ha sido llamado termine.
 t1.join()
 t2.join()
 tiempo_fin = datetime.datetime.now()
