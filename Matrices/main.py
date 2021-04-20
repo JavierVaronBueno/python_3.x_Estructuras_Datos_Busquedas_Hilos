@@ -14,7 +14,7 @@ Filas	2|	9 7 0 4 1
 
  
 """
-
+"""
 matriz = [[15,24,34,45,75],[58,34,55,62,89],[23,41,65,29,45],[3,5,45,21,3],[8,56,34,2,9]]
 
 #Imprimir matriz
@@ -41,3 +41,16 @@ matrix =[list(range(10)) for x in range(10)]
 
 for x in matrix:
 	print(x)
+"""
+R =[]
+for j in range(0,5-1):
+	R.append([])
+	for i in range(0,5-2):
+		R[j].append(0)
+
+for x in R:
+	print(x)
+
+s = [[1,2],[3,4]]
+
+print(s[0][0])
