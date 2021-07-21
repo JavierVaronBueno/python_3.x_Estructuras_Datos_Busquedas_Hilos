@@ -41,7 +41,7 @@ matrix =[list(range(10)) for x in range(10)]
 
 for x in matrix:
 	print(x)
-"""
+
 R =[]
 for j in range(0,5-1):
 	R.append([])
@@ -54,3 +54,35 @@ for x in R:
 s = [[1,2],[3,4]]
 
 print(s[0][0])
+
+for x in range(1,1):
+	print("hola")
+"""
+"""
+m=4
+R=[]
+for j in range(0,m-1):#Fila
+	for i in range(0,m-2):#Columna
+		R.append([0])
+
+
+
+print(R)
+"""
+"""
+l = [[1,8,9],[8,0,4]]
+print(l[0][2])
+a=[]
+
+
+R=[]
+m=5
+for j in range(0,m):#Fila
+	R.append([0])
+	for i in range(0,m-2):#Columna
+		R[j].append(0)	
+print(R)
+"""
+m=4
+Z = [list(range(m)) for x in range(m)]
+print(Z)

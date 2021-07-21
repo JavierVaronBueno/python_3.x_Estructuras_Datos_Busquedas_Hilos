@@ -62,7 +62,11 @@ class listaDobleDitobi():
 		while aux:
 			print(aux.ditobi)
 			aux = aux.anterior
-
+			
+	"""
+		Impresión en forma polinomial de los elementos de la lista,
+		descripción de los elementos en el campo de extensión
+	"""
 	def recorrer_fin_traducido(self, m):
 		aux = self.primero
 		cont = m

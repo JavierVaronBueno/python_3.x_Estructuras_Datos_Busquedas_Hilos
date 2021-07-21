@@ -4,7 +4,7 @@ class operacionesFpm():
 	def __init__(self):
 		self.listaA = listaDobleDitobi()
 		self.listaB = listaDobleDitobi()
-		self.listaR = listaDobleDitobi()
+		self.listaC = listaDobleDitobi()
 
 	def sumaMod(self, listaA, listaB, m):
 		self.listaA = listaA
@@ -19,4 +19,4 @@ class operacionesFpm():
 				sumaModular = (A.ditobi + B.ditobi)%2
 			A = A.siguiente
 			B = B.siguiente
-			self.listaR.agregar_final(sumaModular)
+			self.listaC.agregar_final(sumaModular)
