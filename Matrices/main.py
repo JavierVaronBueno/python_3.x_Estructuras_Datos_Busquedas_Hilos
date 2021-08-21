@@ -82,7 +82,8 @@ for j in range(0,m):#Fila
 	for i in range(0,m-2):#Columna
 		R[j].append(0)	
 print(R)
-"""
+
 m=4
 Z = [list(range(m)) for x in range(m)]
 print(Z)
+"""
