@@ -1,10 +1,18 @@
 import math
 
+def hw(B):
+    f =  format(B, 'b')
+    n = 0
+    for i in range(len(f)):
+        n = n + int(f[i])
+    print(n)
+    return n
 
 def generador_U(m):
     regla =0
     #  length t
-    t = int(math.ceil(math.log(m-1, 2)))+1
+    t = int(math.ceil(math.log(m-1, 2)))+hw(m-1)+1
+    print(math.log(m-1, 2))
     #print(f'm = {m} ; t = {t-1}')
     #  a finite sequence of integers U
     lista_u = []
@@ -66,7 +74,7 @@ def generador_V(regla,m):
     return lista_v
 
 
-M=8
+M=5
 U = generador_U(M)
 
 

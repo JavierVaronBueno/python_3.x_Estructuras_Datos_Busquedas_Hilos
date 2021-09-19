@@ -1,0 +1,3 @@
+Del lado del reuter:
+(conf t):router OSPF <valor numerioco entero 1.....>
+(conf t):network <dir ip> <complemento de la mascara>
